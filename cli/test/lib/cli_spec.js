@@ -395,6 +395,11 @@ describe('cli', () => {
       expect(run.start).to.be.calledWith({ parallel: true })
     })
 
+    it('calls run with --pass-with-no-tests', () => {
+      this.exec('run --pass-with-no-tests')
+      expect(run.start).to.be.calledWith({ passWithNoTests: true })
+    })
+
     it('calls run with --ci-build-id', () => {
       this.exec('run --ci-build-id 123')
       expect(run.start).to.be.calledWith({ ciBuildId: '123' })

@@ -109,6 +109,10 @@ const processRunOptions = (options = {}) => {
     args.push('--parallel')
   }
 
+  if (options.passWithNoTests) {
+    args.push('--pass-with-no-tests', options.passWithNoTests)
+  }
+
   if (options.port) {
     args.push('--port', options.port)
   }

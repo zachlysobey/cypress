@@ -219,6 +219,7 @@ const parseOpts = (opts) => {
     'key',
     'path',
     'parallel',
+    'passWithNoTests',
     'port',
     'project',
     'quiet',
