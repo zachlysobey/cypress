@@ -1,4 +1,12 @@
 <!-- See the ../guides/writing-the-cypress-changelog.md for details on writing the changelog. -->
+## 14.4.0
+
+_Released <RELEASE_DATE> (PENDING)_
+
+**Features:**
+
+- Added a new `--pass-with-no-tests` _run-mode_ CLI argument which will cause the command to pass (exit code 0) when no tests are found matching the provided glob pattern.
+
 ## 14.3.3
 
 _Released 5/6/2025_
